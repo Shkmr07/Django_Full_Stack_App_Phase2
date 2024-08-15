@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Full Stack Website</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #main{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main > input,button{
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #main > button:hover{
+
+        background-color: rgb(77, 233, 77);
+    }
+
+    #list > div > p{
+        
+        padding-left: 10px;
+    }
+
+    #list > div{
+         
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+ 
+    }
+
+    #list > div:hover{
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+
+    #list > div > .container{
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    #list > div > .container > button:hover{
+
+        background-color: rgba(235, 58, 58, 0.912);
+        color: white;
+
+    }
+
+    #list > div > .container > button:nth-of-type(1):hover{
+
+        background-color: rgb(77, 213, 77);
+        color: white;
+
+    }
+
+    #pagination > button:hover{
+
+        background-color: rgb(220, 67, 67);
+        color: white;
+    }
+
+
+
+
+    #list > div:nth-child(even){
+        background-color: rgba(240, 238, 236, 0.933);
+        padding: 5px;
+    }
+
+    #list > div:nth-child(odd){
+        padding: 5px;
+    }
+
+</style>
+<body>
+    <h1>Todo App</h1>
+    <div id="main">
+    <input type="text" id="search" placeholder="Enter the Todo">
+    <button id="btn"><b>CREATE</b></button>
+    <div id="list"></div>
+    <div id="pagination">
+        <button id="prev">Pervious</button>
+        <button id="next">Next</button>
+    </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
